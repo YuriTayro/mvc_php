@@ -7,7 +7,11 @@ class HomeController extends Controller {
        
         $usuario = new Usuario();
         $data = $usuario->getUserData();
-       
+        
         $this->view('home/index', $data);
+    }
+
+    public function contact(){
+        $this->view('home/contact');
     }
 }
